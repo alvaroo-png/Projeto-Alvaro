@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - OrganizaEstudo</title>
+    <link rel="stylesheet" href="tarefa.css">
+</head>
+<body>
+
+    <header>
+        <button id="menu">☰</button>
+
+        <div class="logo">
+            <span class="desenho">OE</span>
+            <h2>Organiza<span>Estudo</span></h2>
+        </div>
+
+        <button id="sino">Notificações</button>
+    </header>
+
+    <main>
+        <h1>Tarefas</h1>
+        <p class="subtitulo">
+            Organize suas atividades e acompanhe seus progressos.
+        </p>
+
+        <div class="filtros">
+            <button class="selecionado" data-filtro="todas">Todas</button>
+            <button data-filtro="pendentes">Pendentes</button>
+            <button data-filtro="concluidas">Concluídas</button>
+            <button data-filtro="favoritas">Favoritas</button>
+        </div>
+
+        <div class="busca">
+            <input type="text" id="buscar" placeholder="Buscar tarefa...">
+            <button id="filtrar">Filtrar</button>
+        </div>
+
+        <section>
+            <h3 class="titulo-lista">Pendentes (<span id="totalPendentes">4</span>)</h3>
+
+            <div id="listaPendentes">
+
+                <div class="tarefa" data-favorita="false">
+                    <input type="checkbox">
+                    <div class="informacoes">
+                        <strong>Trabalho de Matemática</strong>
+                        <p>Capítulo 3 — Funções</p>
+                    </div>
+                    <div class="prazo azul">
+                        <span>20/05</span>
+                        <small>Matemática</small>
+                    </div>
+                    <button class="favorito">☆</button>
+                </div>
+
+                <div class="tarefa" data-favorita="false">
+                    <input type="checkbox">
+                    <div class="informacoes">
+                        <strong>Estudar para prova de História</strong>
+                        <p>Revolução Industrial</p>
+                    </div>
+                    <div class="prazo verde">
+                        <span>22/05</span>
+                        <small>História</small>
+                    </div>
+                    <button class="favorito">☆</button>
+                </div>
+
+                <div class="tarefa" data-favorita="false">
+                    <input type="checkbox">
+                    <div class="informacoes">
+                        <strong>Leitura de Português</strong>
+                        <p>Livro: Dom Casmurro</p>
+                    </div>
+                    <div class="prazo laranja">
+                        <span>25/05</span>
+                        <small>Português</small>
+                    </div>
+                    <button class="favorito">☆</button>
+                </div>
+
+                <div class="tarefa" data-favorita="false">
+                    <input type="checkbox">
+                    <div class="informacoes">
+                        <strong>Exercícios de Física</strong>
+                        <p>Movimento Retilíneo</p>
+                    </div>
+                    <div class="prazo roxo">
+                        <span>27/05</span>
+                        <small>Física</small>
+                    </div>
+                    <button class="favorito">☆</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="secao-concluidas">
+            <h3 class="titulo-lista">
+                Concluídas (<span id="totalConcluidas">2</span>)
+            </h3>
+
+            <div id="listaConcluidas">
+
+                <div class="tarefa concluida" data-favorita="false">
+                    <input type="checkbox" checked>
+                    <div class="informacoes">
+                        <strong>Resumo de Biologia</strong>
+                        <p>Células</p>
+                    </div>
+                    <div class="prazo verde">
+                        <span>15/05</span>
+                        <small>Biologia</small>
+                    </div>
+                    <button class="favorito">☆</button>
+                </div>
+
+                <div class="tarefa concluida" data-favorita="false">
+                    <input type="checkbox" checked>
+                    <div class="informacoes">
+                        <strong>Exercícios de Química</strong>
+                        <p>Tabela Periódica</p>
+                    </div>
+                    <div class="prazo verde">
+                        <span>18/05</span>
+                        <small>Química</small>
+                    </div>
+                    <button class="favorito">☆</button>
+                </div>
+
+            </div>
+        </section>
+
+        <button id="adicionar">+</button>
+    </main>
+
+    <footer>
+        <button onclick="location.href='index.html'">Início</button>
+        <button class="ativo">Tarefas</button>
+        <button id="calendario">Calendário</button>
+        <button id="relatorios">Relatórios</button>
+    </footer>
+
+    <script src="tarefa.js"></script>
+</body>
+</html>

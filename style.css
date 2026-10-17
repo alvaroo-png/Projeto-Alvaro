@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #17243a;
+    background: #f5f7fa;
+}
+
+header {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+header button {
+    background: white;
+    border: none;
+    color: #153e78;
+}
+
+#menu {
+    font-size: 24px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #153e78;
+}
+
+.logo h2 span {
+    color: #22b875;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.desenho {
+    border: 2px solid #153e78;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #153e78;
+}
+
+main {
+    width: 100%;
+    max-width: none;
+    min-height: calc(100vh - 100px);
+    margin: 0;
+    margin-top:0;
+    background: white;
+    min-height: 100vh;
+}
+
+
+main p {
+    color: #6b778b;
+    margin-top: 0;
+}
+
+.resumo {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.cartao {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.cartao h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.cartao p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #17243a;
+}
+
+.azul {
+    background: #f5f8ff;
+    border-color: #d8e6ff;
+    color: #2468f2;
+}
+
+.verde {
+    background: #f3fbf6;
+    border-color: #d3f2e2;
+    color: #22b875;
+}
+
+.laranja {
+    background: #fffaf1;
+    border-color: #ffebc5;
+    color: #ff9d16;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.titulo h3 {
+    font-size: 17px;
+}
+
+#verTodas {
+    border: none;
+    background: white;
+    color: #2468f2;
+}
+
+#listaTarefas {
+    border: 1px solid #e5eaf1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-bottom: 1px solid #e5eaf1;
+    cursor: pointer;
+}
+
+.tarefa:last-child {
+    border-bottom: none;
+}
+
+.tarefa div {
+    flex: 1;
+}
+
+.tarefa strong {
+    font-size: 14px;
+}
+
+.tarefa p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #6b778b;
+}
+
+.tarefa span {
+    color: #2468f2;
+    font-size: 13px;
+}
+
+.tarefa.concluida strong,
+.tarefa.concluida p {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#adicionar {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #2468f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#adicionar:hover {
+    background: #1558df;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 15px 5px;
+}
+
+footer button {
+    border: none;
+    background: white;
+    color: #6b778b;
+    padding: 5px;
+}
+
+footer .ativo {
+    color: #2468f2;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    #sino {
+        font-size: 11px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .resumo {
+        gap: 7px;
+    }
+
+    .cartao {
+        padding: 10px;
+    }
+
+    .cartao p {
+        font-size: 12px;
+    }
+
+    .tarefa {
+        gap: 8px;
+        padding: 12px 8px;
+    }
+
+    .tarefa strong {
+        font-size: 12px;
+    }
+
+    .tarefa p,
+    .tarefa span {
+        font-size: 11px;
+    }
+
+    footer button {
+        font-size: 12px;
+    }
+}

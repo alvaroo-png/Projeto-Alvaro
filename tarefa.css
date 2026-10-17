@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #17243a;
+    background: #f5f7fa;
+}
+
+button, input {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: white;
+    border-bottom: 1px solid #e5eaf1;
+}
+
+header button {
+    border: none;
+    background: white;
+    color: #153e78;
+}
+
+#menu {
+    font-size: 23px;
+}
+
+#sino {
+    font-size: 11px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.desenho {
+    border: 2px solid #153e78;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #153e78;
+    font-size: 14px;
+}
+
+.logo h2 {
+    font-size: 17px;
+    margin: 0;
+    color: #153e78;
+}
+
+.logo h2 span {
+    color: #22b875;
+}
+
+main {
+    max-width: 700px;
+    min-height: 82vh;
+    margin: auto;
+    padding: 20px 16px 65px;
+    background: white;
+    position: relative;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0 0 4px;
+}
+
+.subtitulo {
+    color: #6b778b;
+    font-size: 13px;
+    margin: 0 0 18px;
+}
+
+.filtros {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 12px;
+}
+
+.filtros button {
+    flex: 1;
+    padding: 8px 4px;
+    border: 1px solid #e5eaf1;
+    border-radius: 8px;
+    background: white;
+    color: #153e78;
+    font-size: 12px;
+}
+
+.filtros button.selecionado {
+    background: #2468f2;
+    color: white;
+    border-color: #2468f2;
+}
+
+.busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.busca input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #e5eaf1;
+    border-radius: 20px;
+    outline: none;
+}
+
+.busca input:focus {
+    border-color: #2468f2;
+}
+
+#filtrar {
+    padding: 8px 12px;
+    border: 1px solid #d8e6ff;
+    border-radius: 8px;
+    background: #f5f8ff;
+    color: #2468f2;
+}
+
+.titulo-lista {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 15px 0 10px;
+}
+
+#listaPendentes,
+#listaConcluidas {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #e5eaf1;
+    border-radius: 8px;
+    background: white;
+}
+
+.tarefa input {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    accent-color: #22b875;
+    flex-shrink: 0;
+}
+
+.informacoes {
+    flex: 1;
+    min-width: 0;
+}
+
+.informacoes strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.informacoes p {
+    color: #6b778b;
+    font-size: 10px;
+    margin: 0;
+}
+
+.prazo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.prazo small {
+    padding: 3px 5px;
+    border-radius: 8px;
+    font-size: 9px;
+    background: #f0f4fa;
+}
+
+.prazo.azul {
+    color: #2468f2;
+}
+
+.prazo.azul small {
+    background: #e7f0ff;
+}
+
+.prazo.verde {
+    color: #22b875;
+}
+
+.prazo.verde small {
+    background: #e2f7ec;
+}
+
+.prazo.laranja {
+    color: #ff9d16;
+}
+
+.prazo.laranja small {
+    background: #fff0d5;
+}
+
+.prazo.roxo {
+    color: #8055f6;
+}
+
+.prazo.roxo small {
+    background: #f0eaff;
+}
+
+.favorito {
+    border: none;
+    background: transparent;
+    color: #ff9d16;
+    font-size: 17px;
+    padding: 0;
+}
+
+.tarefa.concluida {
+    background: #f3fbf6;
+    border-color: #d3f2e2;
+}
+
+.tarefa.concluida .informacoes strong,
+.tarefa.concluida .informacoes p {
+    color: #89948e;
+    text-decoration: line-through;
+}
+
+.secao-concluidas {
+    margin-top: 18px;
+}
+
+#adicionar {
+    position: fixed;
+    bottom: 75px;
+    right: max(calc((100vw - 668px) / 2), 20px);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #2468f2;
+    color: white;
+    font-size: 28px;
+    box-shadow: 0 3px 8px #0002;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 5px;
+    background: white;
+    border-top: 1px solid #e5eaf1;
+    position: sticky;
+    bottom: 0;
+}
+
+footer button {
+    border: none;
+    background: white;
+    color: #6b778b;
+    font-size: 11px;
+    padding: 5px;
+}
+
+footer .ativo {
+    color: #2468f2;
+    font-weight: bold;
+}
+
+@media (max-width: 380px) {
+    main {
+        padding: 16px 10px 65px;
+    }
+
+    .filtros {
+        gap: 4px;
+    }
+
+    .filtros button {
+        font-size: 10px;
+    }
+
+    .tarefa {
+        gap: 5px;
+        padding: 8px 6px;
+    }
+
+    .informacoes strong {
+        font-size: 11px;
+    }
+
+    .favorito {
+        font-size: 14px;
+    }
+}

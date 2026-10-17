@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrganizaEstudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+    
+
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="desenho">
+            <h2>Organiza<span>Estudo</span></h2>
+        </div>
+
+        <button id="sino">Notificações</button>
+    </header>
+        <h1>Olá, Patricia!</h1>
+        <p>Vamos organizar seus estudos hoje?</p>
+       
+    <main>
+
+            <br>
+        <section class="resumo">
+            <div class="cartao azul">
+                <h2 id="pendentes">0</h2>
+                <p>Tarefas pendentes</p>
+            </div>
+
+            <div class="cartao verde">
+                <h2 id="concluidas">4</h2>
+                <p>Concluídas esta semana</p>
+            </div>
+
+            <div class="cartao laranja">
+                <h2>0</h2>
+                <p>Prazos próximos</p>
+            </div>
+
+        </section>
+         
+        <section>
+            <div class="titulo">
+                <h3>Próximas atividades</h3>
+                <button id="verTodas">Ver todas</button>
+            </div>
+
+            <div id="listaTarefas">
+
+                <label class="tarefa">
+                    
+                    <div>
+                        <strong>Trabalho de Matemática</strong>
+                        <p>Capítulo 3 - Funções</p>
+                    </div>
+                    <span>Concluída</span>
+                </label>
+
+                <label class="tarefa">
+                    <div>
+                        <strong>Prova de História</strong>
+                        <p>Revolução Industrial</p>
+                    </div>
+                    <span>Concluída</span>
+                </label>
+
+                <label class="tarefa">
+                    <div>
+                        <strong>Leitura de Português</strong>
+                        <p>Livro: Dom Casmurro</p>
+                    </div>
+                    <span>concluída</span>
+                </label>
+
+                <label class="tarefa">
+                    <div>
+                        <strong>Exercícios de Física</strong>
+                        <p>Movimento Retilíneo</p>
+                    </div>
+                    <span>concluída</span>
+                </label>
+
+            </div>
+        </section>
+        
+        <button id="adicionar">+ Adicionar tarefa</button>
+    </main>
+
+    <footer>
+        <button class="ativo">Início</button>
+        <button id="tarefas">Tarefas</button>
+        <button id="calendario">Calendário</button>
+        <button id="relatorios">Relatórios</button>
+    </footer>
+
+    <script src="script.js"></script>
+
+    </main>
+</body>
+</html>
