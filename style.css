@@ -28,10 +28,6 @@ header button {
     color: #153e78;
 }
 
-#menu {
-    font-size: 24px;
-}
-
 .logo {
     height: 50px;
     width: 50px;
@@ -199,15 +195,19 @@ main p {
 footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 12px 5px;
     background: white;
-    border-top: 1px solid #ddd;
-    padding: 15px 5px;
+    border-top: 1px solid #e5eaf1;
+    position: sticky;
+    bottom: 0;
 }
 
 footer button {
     border: none;
     background: white;
     color: #6b778b;
+    font-size: 11px;
     padding: 5px;
 }
 

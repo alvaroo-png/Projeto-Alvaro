@@ -32,31 +32,22 @@ header button {
     color: #153e78;
 }
 
-#menu {
-    font-size: 23px;
-}
 
 #sino {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .logo {
+    height: 53px;
+    width: 53px;
+
     display: flex;
     align-items: center;
-    gap: 6px;
-}
-
-.desenho {
-    border: 2px solid #153e78;
-    padding: 6px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: #153e78;
-    font-size: 14px;
+    gap: 8px;
 }
 
 .logo h2 {
-    font-size: 17px;
+    font-size: 23px;
     margin: 0;
     color: #153e78;
 }
@@ -65,30 +56,42 @@ header button {
     color: #22b875;
 }
 
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.desenho {
+    border: 2px solid #153e78;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #153e78;
+}
+
 main {
-    max-width: 700px;
-    min-height: 82vh;
-    margin: auto;
-    padding: 20px 16px 65px;
+    width: 100%;
+    max-width: none;
+    min-height: calc(100vh - 100px);
+    margin: 0;
+    margin-top:0;
     background: white;
-    position: relative;
+    min-height: 100vh;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 28px;
     margin: 0 0 4px;
 }
 
 .subtitulo {
     color: #6b778b;
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 0 18px;
 }
 
 .filtros {
     display: flex;
     gap: 7px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .filtros button {
@@ -98,7 +101,7 @@ h1 {
     border-radius: 8px;
     background: white;
     color: #153e78;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .filtros button.selecionado {
@@ -110,7 +113,7 @@ h1 {
 .busca {
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .busca input {
@@ -118,7 +121,7 @@ h1 {
     min-width: 0;
     padding: 10px;
     border: 1px solid #e5eaf1;
-    border-radius: 20px;
+    border-radius: 23px;
     outline: none;
 }
 
@@ -135,7 +138,7 @@ h1 {
 }
 
 .titulo-lista {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: normal;
     margin: 15px 0 10px;
 }
@@ -144,7 +147,7 @@ h1 {
 #listaConcluidas {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 9px;
 }
 
 .tarefa {
@@ -172,13 +175,13 @@ h1 {
 
 .informacoes strong {
     display: block;
-    font-size: 12px;
-    margin-bottom: 4px;
+    font-size: 15px;
+    margin-bottom: 7px;
 }
 
 .informacoes p {
     color: #6b778b;
-    font-size: 10px;
+    font-size: 13px;
     margin: 0;
 }
 
@@ -187,14 +190,14 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
-    font-size: 11px;
+    font-size: 14px;
     white-space: nowrap;
 }
 
 .prazo small {
     padding: 3px 5px;
     border-radius: 8px;
-    font-size: 9px;
+    font-size: 12px;
     background: #f0f4fa;
 }
 

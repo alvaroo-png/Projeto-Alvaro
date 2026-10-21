@@ -1,0 +1,84 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário - OrganizaEstudo</title>
+    <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+
+    <header>
+        <button id="menu">☰</button>
+
+        <div class="logo">
+            <span class="desenho">OE</span>
+            <h2>Organiza<span>Estudo</span></h2>
+        </div>
+
+        <button id="sino">Notificações</button>
+    </header>
+
+    <main>
+        <h1>Calendário</h1>
+        <p class="subtitulo">Veja seus compromissos e prazos.</p>
+
+        <section class="eventos">
+            <h3>Eventos do dia</h3>
+
+            <div class="evento verde">
+                <div class="informacoes">
+                    <strong>Estudar para prova de História</strong>
+                    <p>Revolução Industrial</p>
+                </div>
+
+                <div class="horario">
+                    <span>14:00</span>
+                    <small>até 16:00</small>
+                </div>
+            </div>
+
+            <div class="evento azul">
+                <div class="informacoes">
+                    <strong>Trabalho de Matemática</strong>
+                    <p>Capítulo 3 — Funções</p>
+                </div>
+
+                <div class="horario">
+                    <span>19:00</span>
+                    <small>até 21:00</small>
+                </div>
+            </div>
+
+            <div class="evento roxo">
+                <div class="informacoes">
+                    <strong>Exercícios de Física</strong>
+                    <p>Movimento Retilíneo</p>
+                </div>
+
+                <div class="horario">
+                    <span>21:30</span>
+                    <small>até 22:30</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="dica">
+            <h3>Dica</h3>
+            <p>Mantenha suas atividades atualizadas para não perder nenhum prazo!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <button onclick="location.href='index.html'">Início</button>
+        <button onclick="location.href='tarefas.html'">Tarefas</button>
+        <button class="ativo">Calendário</button>
+        <button id="relatorios">Relatórios</button>
+    </footer>
+
+    <script src="calendario.js"></script>
+</body>
+</html>
+```
