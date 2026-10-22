@@ -1,17 +1,13 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendário - OrganizaEstudo</title>
-    <link rel="stylesheet" href="calendario.css">
+     <link rel="stylesheet" href="relatorio.css">
 </head>
 <body>
 
     <header>
-        <button id="menu">☰</button>
-
         <div class="logo">
             <span class="desenho">OE</span>
             <h2>Organiza<span>Estudo</span></h2>
@@ -21,52 +17,123 @@
     </header>
 
     <main>
-        <h1>Calendário</h1>
-        <p class="subtitulo">Veja seus compromissos e prazos.</p>
+        <h1>Relatórios</h1>
+        <p class="subtitulo">Acompanhe seu desempenho nos estudos.</p>
 
-        <section class="eventos">
-            <h3>Eventos do dia</h3>
+        <section class="resumo">
 
-            <div class="evento verde">
-                <div class="informacoes">
-                    <strong>Estudar para prova de História</strong>
-                    <p>Revolução Industrial</p>
-                </div>
-
-                <div class="horario">
-                    <span>14:00</span>
-                    <small>até 16:00</small>
-                </div>
+            <div class="cartao azul">
+                <h2>12</h2>
+                <p>Tarefas criadas</p>
+                <small>este mês</small>
             </div>
 
-            <div class="evento azul">
-                <div class="informacoes">
-                    <strong>Trabalho de Matemática</strong>
-                    <p>Capítulo 3 — Funções</p>
-                </div>
-
-                <div class="horario">
-                    <span>19:00</span>
-                    <small>até 21:00</small>
-                </div>
+            <div class="cartao verde">
+                <h2>6</h2>
+                <p>Concluídas</p>
+                <small>este mês</small>
             </div>
 
-            <div class="evento roxo">
-                <div class="informacoes">
-                    <strong>Exercícios de Física</strong>
-                    <p>Movimento Retilíneo</p>
+            <div class="cartao laranja">
+                <h2>6</h2>
+                <p>Pendentes</p>
+                <small>este mês</small>
+            </div>
+
+            <div class="cartao roxo">
+                <h2>18h</h2>
+                <p>Foco total</p>
+                <small>este mês</small>
+            </div>
+
+        </section>
+
+        <section class="bloco">
+            <h3>Tarefas por status</h3>
+
+            <div class="status">
+                <div>
+                    <span class="bolinha verde-bolinha"></span>
+                    <p>Concluídas</p>
+                </div>
+                <strong>50% (6)</strong>
+            </div>
+
+            <div class="status">
+                <div>
+                    <span class="bolinha laranja-bolinha"></span>
+                    <p>Pendentes</p>
+                </div>
+                <strong>25% (3)</strong>
+            </div>
+
+            <div class="status">
+                <div>
+                    <span class="bolinha azul-bolinha"></span>
+                    <p>Atrasadas</p>
+                </div>
+                <strong>25% (3)</strong>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <h3>Tempo de foco</h3>
+            <p class="descricao">Horas de estudo por semana</p>
+
+            <div class="tempo">
+                <div>
+                    <span>3h</span>
+                    <p>1 – 7</p>
                 </div>
 
-                <div class="horario">
-                    <span>21:30</span>
-                    <small>até 22:30</small>
+                <div>
+                    <span>4h</span>
+                    <p>8 – 14</p>
+                </div>
+
+                <div>
+                    <span>6h</span>
+                    <p>15 – 21</p>
+                </div>
+
+                <div>
+                    <span>3h</span>
+                    <p>22 – 28</p>
+                </div>
+
+                <div>
+                    <span>2h</span>
+                    <p>29 – 31</p>
                 </div>
             </div>
         </section>
 
-        <section class="dica">
-            <h3>Dica</h3>
-            <p>Mantenha suas atividades atualizadas para não perder nenhum prazo!</p>
+        <section class="bloco">
+            <h3>Matérias mais produtivas</h3>
+
+            <div class="materias">
+
+                <div class="materia verde">
+                    <strong>História</strong>
+                    <span>6h</span>
+                </div>
+
+                <div class="materia azul">
+                    <strong>Matemática</strong>
+                    <span>5h</span>
+                </div>
+
+                <div class="materia roxo">
+                    <strong>Física</strong>
+                    <span>4h</span>
+                </div>
+
+                <div class="materia laranja">
+                    <strong>Português</strong>
+                    <span>3h</span>
+                </div>
+
+            </div>
         </section>
 
     </main>
@@ -74,11 +141,10 @@
     <footer>
         <button onclick="location.href='index.html'">Início</button>
         <button onclick="location.href='tarefas.html'">Tarefas</button>
-        <button class="ativo">Calendário</button>
-        <button id="relatorios">Relatórios</button>
+        <button onclick="location.href='calendario.html'">Calendário</button>
+        <button class="ativo">Relatórios</button>
     </footer>
 
-    <script src="calendario.js"></script>
+    <script src="relatorios.js"></script>
 </body>
 </html>
-```

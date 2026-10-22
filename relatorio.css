@@ -26,17 +26,17 @@ header {
 }
 
 header button {
-    background: white;
     border: none;
+    background: white;
     color: #153e78;
 }
 
 #menu {
-    font-size: 23px;
+    font-size: 26px;
 }
 
 #sino {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .logo {
@@ -50,137 +50,220 @@ header button {
     padding: 6px;
     border-radius: 5px;
     color: #153e78;
+    font-size: 17px;
     font-weight: bold;
-    font-size: 14px;
 }
 
 .logo h2 {
-    font-size: 17px;
     margin: 0;
     color: #153e78;
+    font-size: 20px;
 }
 
 .logo h2 span {
     color: #22b875;
 }
 
-/* Conteúdo */
+/* Conteúdo principal */
 
 main {
-    max-width: 700px;
-    min-height: 82vh;
-    margin: auto;
-    padding: 20px 16px 35px;
+    width: 100%;
+    max-width: none;
+    min-height: calc(100vh - 100px);
+    margin: 0;
+    margin-top:0;
     background: white;
+    min-height: 100vh;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 29px;
     margin: 0 0 5px;
 }
 
 .subtitulo {
+    margin: 0 0 18px;
     color: #6b778b;
-    font-size: 13px;
-    margin: 0 0 25px;
-}
-
-/* Eventos */
-
-.eventos h3 {
     font-size: 16px;
-    margin-bottom: 12px;
 }
 
-.evento {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Cartões do resumo */
+
+.resumo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding: 15px 12px;
-    margin-bottom: 8px;
-    border: 1px solid #e5eaf1;
-    border-left: 4px solid;
-    border-radius: 8px;
-    background: white;
+    margin-bottom: 20px;
 }
 
-.informacoes {
-    flex: 1;
-    min-width: 0;
+.cartao {
+    padding: 13px;
+    border: 1px solid;
+    border-radius: 9px;
 }
 
-.informacoes strong {
-    display: block;
-    font-size: 13px;
-    margin-bottom: 5px;
+.cartao h2 {
+    margin: 0 0 7px;
+    font-size: 27px;
 }
 
-.informacoes p {
-    margin: 0;
-    font-size: 11px;
+.cartao p {
+    margin: 0 0 5px;
+    color: #17243a;
+    font-size: 15px;
+}
+
+.cartao small {
     color: #6b778b;
+    font-size: 14px;
 }
 
-.horario {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
-    white-space: nowrap;
-    font-size: 12px;
-}
+/* Cores */
 
-.horario small {
-    color: #6b778b;
-    font-size: 11px;
+.azul {
+    color: #2468f2;
+    background: #f5f8ff;
+    border-color: #d8e6ff;
 }
 
 .verde {
-    border-left-color: #22b875;
-}
-
-.verde .horario span {
     color: #22b875;
+    background: #f3fbf6;
+    border-color: #d3f2e2;
 }
 
-.azul {
-    border-left-color: #2468f2;
-}
-
-.azul .horario span {
-    color: #2468f2;
+.laranja {
+    color: #ff9d16;
+    background: #fffaf1;
+    border-color: #ffebc5;
 }
 
 .roxo {
-    border-left-color: #8055f6;
-}
-
-.roxo .horario span {
     color: #8055f6;
+    background: #f8f5ff;
+    border-color: #e5dcff;
 }
 
-/* Dica */
+/* Blocos de informações */
 
-.dica {
-    margin-top: 25px;
-    padding: 15px;
-    border: 1px solid #d8e6ff;
-    border-radius: 8px;
-    background: #f5f8ff;
+.bloco {
+    padding: 14px;
+    margin-bottom: 14px;
+    border: 1px solid #e5eaf1;
+    border-radius: 9px;
 }
 
-.dica h3 {
-    color: #2468f2;
-    font-size: 14px;
-    margin: 0 0 7px;
+.bloco h3 {
+    margin: 0 0 14px;
+    font-size: 17px;
 }
 
-.dica p {
-    color: #6b778b;
-    font-size: 12px;
-    line-height: 18px;
+/* Status das tarefas */
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 13px 0;
+    font-size: 15px;
+}
+
+.status div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.status p {
     margin: 0;
+}
+
+.status strong {
+    font-weight: normal;
+    color: #6b778b;
+}
+
+.bolinha {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.verde-bolinha {
+    background: #22b875;
+}
+
+.laranja-bolinha {
+    background: #ff9d16;
+}
+
+.azul-bolinha {
+    background: #2468f2;
+}
+
+/* Tempo de estudo */
+
+.descricao {
+    margin: -5px 0 12px;
+    color: #6b778b;
+    font-size: 15px;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+}
+
+.tempo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.tempo div:last-child {
+    border-bottom: none;
+}
+
+.tempo span {
+    color: #2468f2;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.tempo p {
+    margin: 0;
+    color: #6b778b;
+    font-size: 15px;
+}
+
+/* Matérias */
+
+.materias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.materia {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.materia strong {
+    color: #17243a;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.materia span {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 /* Menu inferior */
@@ -197,11 +280,11 @@ footer {
 }
 
 footer button {
+    padding: 5px;
     border: none;
     background: white;
     color: #6b778b;
-    font-size: 11px;
-    padding: 5px;
+    font-size: 14px;
 }
 
 footer .ativo {
@@ -213,7 +296,7 @@ footer .ativo {
 
 @media (max-width: 400px) {
     main {
-        padding: 18px 12px 30px;
+        padding: 18px 12px 25px;
     }
 
     .logo h2 {
@@ -224,19 +307,23 @@ footer .ativo {
         font-size: 10px;
     }
 
-    .evento {
-        padding: 12px 8px;
+    .cartao {
+        padding: 10px;
     }
 
-    .informacoes strong {
-        font-size: 12px;
+    .materia {
+        padding: 10px;
+    }
+}
+
+/* Ajuste para telas maiores */
+
+@media (min-width: 600px) {
+    .resumo {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .informacoes p {
-        font-size: 10px;
-    }
-
-    .horario {
-        font-size: 11px;
+    .materias {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
